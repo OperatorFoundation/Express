@@ -11,6 +11,7 @@
 		DAB3541F288E344800746490 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3541E288E344800746490 /* ContentView.swift */; };
 		DAB35421288E344900746490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB35420288E344900746490 /* Assets.xcassets */; };
 		DAB35424288E344900746490 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB35423288E344900746490 /* Preview Assets.xcassets */; };
+		DAB3542C288E34DA00746490 /* Environments.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3542B288E34DA00746490 /* Environments.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		DAB35420288E344900746490 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAB35423288E344900746490 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DAB35425288E344900746490 /* Express.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Express.entitlements; sourceTree = "<group>"; };
+		DAB3542B288E34DA00746490 /* Environments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environments.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				DAB3541C288E344800746490 /* ExpressApp.swift */,
 				DAB3541E288E344800746490 /* ContentView.swift */,
+				DAB3542B288E34DA00746490 /* Environments.swift */,
 				DAB35420288E344900746490 /* Assets.xcassets */,
 				DAB35425288E344900746490 /* Express.entitlements */,
 				DAB35422288E344900746490 /* Preview Content */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB3542C288E34DA00746490 /* Environments.swift in Sources */,
 				DAB3541F288E344800746490 /* ContentView.swift in Sources */,
 				DAB3541D288E344800746490 /* ExpressApp.swift in Sources */,
 			);
