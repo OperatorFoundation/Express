@@ -12,6 +12,11 @@
 		DAB35421288E344900746490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB35420288E344900746490 /* Assets.xcassets */; };
 		DAB35424288E344900746490 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB35423288E344900746490 /* Preview Assets.xcassets */; };
 		DAB3542C288E34DA00746490 /* Environments.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3542B288E34DA00746490 /* Environments.swift */; };
+		DAB35432288F3A0D00746490 /* SwiftHexTools in Frameworks */ = {isa = PBXBuildFile; productRef = DAB35431288F3A0D00746490 /* SwiftHexTools */; };
+		DAB35435288F3A2A00746490 /* Gardener in Frameworks */ = {isa = PBXBuildFile; productRef = DAB35434288F3A2A00746490 /* Gardener */; };
+		DAB35438288F3A4400746490 /* FluentSQLiteDriver in Frameworks */ = {isa = PBXBuildFile; productRef = DAB35437288F3A4400746490 /* FluentSQLiteDriver */; };
+		DAB3543B288F3A6500746490 /* Fluent in Frameworks */ = {isa = PBXBuildFile; productRef = DAB3543A288F3A6500746490 /* Fluent */; };
+		DAB3543E288F3A6E00746490 /* Datable in Frameworks */ = {isa = PBXBuildFile; productRef = DAB3543D288F3A6E00746490 /* Datable */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB3543E288F3A6E00746490 /* Datable in Frameworks */,
+				DAB3543B288F3A6500746490 /* Fluent in Frameworks */,
+				DAB35432288F3A0D00746490 /* SwiftHexTools in Frameworks */,
+				DAB35435288F3A2A00746490 /* Gardener in Frameworks */,
+				DAB35438288F3A4400746490 /* FluentSQLiteDriver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +98,13 @@
 			dependencies = (
 			);
 			name = Express;
+			packageProductDependencies = (
+				DAB35431288F3A0D00746490 /* SwiftHexTools */,
+				DAB35434288F3A2A00746490 /* Gardener */,
+				DAB35437288F3A4400746490 /* FluentSQLiteDriver */,
+				DAB3543A288F3A6500746490 /* Fluent */,
+				DAB3543D288F3A6E00746490 /* Datable */,
+			);
 			productName = Express;
 			productReference = DAB35419288E344800746490 /* Express.app */;
 			productType = "com.apple.product-type.application";
@@ -116,6 +133,13 @@
 				Base,
 			);
 			mainGroup = DAB35410288E344800746490;
+			packageReferences = (
+				DAB35430288F3A0D00746490 /* XCRemoteSwiftPackageReference "SwiftHexTools" */,
+				DAB35433288F3A2A00746490 /* XCRemoteSwiftPackageReference "Gardener" */,
+				DAB35436288F3A4400746490 /* XCRemoteSwiftPackageReference "fluent-sqlite-driver" */,
+				DAB35439288F3A6500746490 /* XCRemoteSwiftPackageReference "fluent" */,
+				DAB3543C288F3A6E00746490 /* XCRemoteSwiftPackageReference "Datable" */,
+			);
 			productRefGroup = DAB3541A288E344800746490 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -340,6 +364,77 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DAB35430288F3A0D00746490 /* XCRemoteSwiftPackageReference "SwiftHexTools" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OperatorFoundation/SwiftHexTools";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		DAB35433288F3A2A00746490 /* XCRemoteSwiftPackageReference "Gardener" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OperatorFoundation/Gardener";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		DAB35436288F3A4400746490 /* XCRemoteSwiftPackageReference "fluent-sqlite-driver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vapor/fluent-sqlite-driver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		DAB35439288F3A6500746490 /* XCRemoteSwiftPackageReference "fluent" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vapor/fluent.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		DAB3543C288F3A6E00746490 /* XCRemoteSwiftPackageReference "Datable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OperatorFoundation/Datable";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DAB35431288F3A0D00746490 /* SwiftHexTools */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAB35430288F3A0D00746490 /* XCRemoteSwiftPackageReference "SwiftHexTools" */;
+			productName = SwiftHexTools;
+		};
+		DAB35434288F3A2A00746490 /* Gardener */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAB35433288F3A2A00746490 /* XCRemoteSwiftPackageReference "Gardener" */;
+			productName = Gardener;
+		};
+		DAB35437288F3A4400746490 /* FluentSQLiteDriver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAB35436288F3A4400746490 /* XCRemoteSwiftPackageReference "fluent-sqlite-driver" */;
+			productName = FluentSQLiteDriver;
+		};
+		DAB3543A288F3A6500746490 /* Fluent */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAB35439288F3A6500746490 /* XCRemoteSwiftPackageReference "fluent" */;
+			productName = Fluent;
+		};
+		DAB3543D288F3A6E00746490 /* Datable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAB3543C288F3A6E00746490 /* XCRemoteSwiftPackageReference "Datable" */;
+			productName = Datable;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DAB35411288E344800746490 /* Project object */;
 }
